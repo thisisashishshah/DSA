@@ -1,0 +1,80 @@
+1. Program to add two numbers.		
+
+
+		AREA Addition, CODE, READONLY		; name the code block
+ 		ENTRY					; marker of first executable instruction
+START	 						; label
+		MOV r0, #01				; put the value 01 in register0
+ 		MOV r1, #06				; put the value 06 in register1
+ 		add r2, r0, r1				; r2 = r0 + r1
+ 	 						; add values in r0 and r1 together and store total back into r2
+S		B   S                      		; Branch to Label S
+		END
+
+
+
+2. Program to add and subtract  two numbers.	
+
+AREA SUM, CODE, READONLY
+
+		ENTRY
+		
+		MOV R2, #10			; load 10 to register
+		MOV R1, #05			; load 05 to register
+		MOV R3, #00			; empty the register r3=00 to store sum
+		MOV R4, #00			; empty the register r4=00 to store subtraction
+
+		
+		ADD R3, R2, R1			; R3=R2+R1 
+		SUBS R4, R2, R1			; R3=R2-R1
+			
+
+back	 	B back				; Branch to Label B
+		END
+
+
+
+3. Program to Multiply  two numbers.
+
+
+AREA Addition, CODE, READONLY	; name the code block
+ 		ENTRY					; marker of first executable instruction
+START	 						; label
+		MOV r0, #01				; put the value 01 in register0
+ 		MOV r1, #06				; put the value 06 in register1
+ 		mul r2, r0, r1				; r2 = r0 + r1
+ 	 						; add values in r0 and r1 together
+ 	 						; and store total back into r2
+S		B   S                      		; Branch to Label S
+		END
+
+3. Program to implement Calculator.
+
+
+
+		AREA Addition, CODE, READONLY	; name the code block
+ 		ENTRY					; marker of first executable instruction
+START	 						; label
+		MOV r0, #08				; put the value 08 in register0
+ 		MOV r1, #06				; put the value 06 in register1
+		ADD R3,R0,R1				; r3 = r0 + r1
+ 		SUB r0, r1				; add values in r0 and r1 together store total back into r0
+ 	 						
+ 	 						
+		MUL R8,R0,R1                            r8=r0*r1;
+S		B   S                      		; Branch to Label S
+		END
+
+
+4.Program to add two numbers where one operand is an immediate constant.
+
+
+AREA Addition, CODE, READONLY		; name the code block
+ 		ENTRY					; marker of first executable instruction
+START	 						; label
+		MOV r0, #01				; put the value 01 in register0
+ 		add r2, r0,#05				; r2 = r0 + 05
+ 	 						; add values in r0 and r1 together
+ 	 						; and store total back into r2
+S		B   S                      		; Branch to Label S
+		END
